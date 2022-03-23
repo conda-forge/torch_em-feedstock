@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: torch_em
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/constantinpape/torch_em/archive/{{ version }}.tar.gz
-  sha256: "0ec220518c96177e36e52eaad5491b12daecf82e229eade2c1ffd8ea6d0bf711"
+  sha256: ebf0bb1f3dd3d25e9cdba5339b2464f8dd255f83c43353d76fba3c3fdf73573c
 
 build:
   number: 0
-  script: "pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
 
 requirements:
