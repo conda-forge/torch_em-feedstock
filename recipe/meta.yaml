@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.3.0post0" %}
 
 package:
   name: torch_em
