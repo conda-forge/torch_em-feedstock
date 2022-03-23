@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/constantinpape/torch_em/archive/{{ version }}.tar.gz
-  sha256: ebf0bb1f3dd3d25e9cdba5339b2464f8dd255f83c43353d76fba3c3fdf73573c
+  sha256: 330a8b3536f7804fb032eb3788514e7d2cb692f856d0a9daf2b8f56ac55d7788
 
 build:
   number: 0
