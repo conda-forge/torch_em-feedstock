@@ -1,11 +1,11 @@
-About torch_em
-==============
+About torch_em-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/torch_em-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/constantinpape/torch-em
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/torch_em-feedstock/blob/main/LICENSE.txt)
 
 Summary: Deep-learning based semantic and instance segmentation for 3D Electron Microscopy and other bioimage analysis problems based on pytorch.
 
