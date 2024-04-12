@@ -1,4 +1,4 @@
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 
 package:
   name: torch_em
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/constantinpape/torch_em/archive/{{ version }}.tar.gz
-  sha256: aa099eec656aa69f42e2ff22f7e7b0072ec167bc3c824d4b7199f73bb3e5b0e5
+  sha256: 5bfd6bd3605c7e435708e26e32c2cb48b219fb204cfafffa502ac7a20f7a921c
 
 build:
   number: 0
@@ -18,7 +18,8 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - bioimageio.core >=0.4.6
+    - bioimageio.core >=0.5.0
+    - bioimageio.spec <0.5.0
     - kornia
     - python >=3.6
     - python-elf >=0.4.8
