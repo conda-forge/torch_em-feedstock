@@ -9,7 +9,7 @@ source:
   sha256: 2ec7160940cdc68b6674399eb822ac5e77536920feb0d8b6b3762d4d83a11705
 
 build:
-  number: 0
+  number: 1
   script: pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
 
@@ -30,6 +30,7 @@ requirements:
     - torchvision
     - tqdm
     - timm
+    - natsort
 
 test:
   imports:
