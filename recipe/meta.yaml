@@ -9,13 +9,13 @@ source:
   sha256: f9aaab8a89eebd0e7499807545efb1ceac3e9911a8f2ea3f7a139f73398cbd62
 
 build:
-  number: 0
+  number: 1
   script: pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
@@ -23,7 +23,7 @@ requirements:
     - bioimageio.spec >=0.5.2
     - kornia
     - natsort
-    - python >=3.6
+    - python >={{ python_min }}
     - python-elf >=0.4.8
     - pytorch
     - tensorboard
@@ -33,6 +33,8 @@ requirements:
     - timm
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - torch_em
   source_files:
