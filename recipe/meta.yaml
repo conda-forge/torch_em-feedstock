@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/constantinpape/torch_em/archive/{{ version }}.tar.gz
   sha256: 5f6bdf9b53e3bdaf3c3d8a3de351753a213c8a9e94bb700d3f9dd2441cb05cdb
+  patches:
+    - patches/fix_compile_test.patch
 
 build:
   number: 0
