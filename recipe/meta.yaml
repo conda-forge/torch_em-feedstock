@@ -1,4 +1,5 @@
-{% set version = "0.7.5" %}
+{% set version = "0.7.6" %}
+{% set python_min = "3.10" %}
 
 package:
   name: torch_em
@@ -6,7 +7,9 @@ package:
 
 source:
   url: https://github.com/constantinpape/torch_em/archive/{{ version }}.tar.gz
-  sha256: f9aaab8a89eebd0e7499807545efb1ceac3e9911a8f2ea3f7a139f73398cbd62
+  sha256: 5f6bdf9b53e3bdaf3c3d8a3de351753a213c8a9e94bb700d3f9dd2441cb05cdb
+  patches:
+    - fix_compile_test.patch
 
 build:
   number: 0
@@ -15,7 +18,7 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
@@ -23,7 +26,7 @@ requirements:
     - bioimageio.spec >=0.5.2
     - kornia
     - natsort
-    - python >=3.6
+    - python >={{ python_min }}
     - python-elf >=0.4.8
     - pytorch
     - tensorboard
@@ -33,6 +36,8 @@ requirements:
     - timm
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - torch_em
   source_files:
