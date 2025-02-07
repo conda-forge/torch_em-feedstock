@@ -12,7 +12,7 @@ source:
     - fix_compile_test.patch
 
 build:
-  number: 0
+  number: 1
   script: pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
 
