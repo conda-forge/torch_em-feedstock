@@ -10,7 +10,6 @@ source:
   sha256: 8222669fd429f1b08df282c1610196db1a04c285f79cd5cb268e003452075206
   patches:
     - fix_compile_test.patch
-    - change-test-status.patch
 
 build:
   number: 0
