@@ -1,4 +1,4 @@
-{% set version = "0.7.8" %}
+{% set version = "0.7.9" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,10 +7,9 @@ package:
 
 source:
   url: https://github.com/constantinpape/torch_em/archive/{{ version }}.tar.gz
-  sha256: fa4d00146c3b52792b1f107858d68bf058e746a366e55f6d7bb3e4b2f5305f4d
+  sha256: 8222669fd429f1b08df282c1610196db1a04c285f79cd5cb268e003452075206
   patches:
     - fix_compile_test.patch
-    - change-test-status.patch
 
 build:
   number: 0
@@ -23,7 +22,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - bioimageio.core >=0.6.1
+    - bioimageio.core >=0.8.0
     - bioimageio.spec >=0.5.2
     - kornia
     - natsort
@@ -36,7 +35,6 @@ requirements:
     - torchvision
     - tqdm
     - timm
-    - xarray <2025.3.0
 
 test:
   requires:
