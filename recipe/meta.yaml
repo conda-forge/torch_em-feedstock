@@ -1,4 +1,4 @@
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/constantinpape/torch_em/archive/{{ version }}.tar.gz
-  sha256: 3d5bb7b225ae5ebd37952088503eeede4eccf69aa72d27fb98f6c4157a3b0f6c
+  sha256: 181f29b507166cf646067429258fe2320ceda03a329cec1249122e957ee69953
   patches:
     - fix_compile_test.patch
 
