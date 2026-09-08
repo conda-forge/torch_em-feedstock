@@ -1,4 +1,4 @@
-{% set version = "0.10.5" %}
+{% set version = "0.10.6" %}
 
 package:
   name: torch_em
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/constantinpape/torch_em/archive/{{ version }}.tar.gz
-  sha256: d06872aeb94f623451c2339e80b0da662fabdaeb8a622e148ec3b2174bb0667a
+  sha256: 2505ac608e50c3671d3f1b2a740ec3eed6a80e8807e44174688589f0edc791dc
   patches:
     - fix_compile_test.patch
 
